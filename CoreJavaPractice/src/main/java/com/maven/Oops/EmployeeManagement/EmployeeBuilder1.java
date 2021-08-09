@@ -232,7 +232,7 @@ public class EmployeeBuilder1 {
 	 * @return
 	 */
 	
-	public void getIncreaseSalary(int emId, int increment)		
+	public void increaseSalary(int emId, int increment)		
 	{
 	 
 		for(Employee1 emp : employee)

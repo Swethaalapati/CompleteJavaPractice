@@ -34,7 +34,7 @@ public class Employee1Main {
 		
 		System.out.println(builder.getEmployeeBySalary(50000));
 		
-		builder.getIncreaseSalary(12017, 5000);
+		builder.increaseSalary(12017, 5000);
 		System.out.println(e3);
 		
 		builder.giveHikeByPercentage(10);
