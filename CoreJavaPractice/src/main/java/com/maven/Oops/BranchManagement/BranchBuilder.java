@@ -5,6 +5,11 @@ public class BranchBuilder {
 
 		ArrayList<Branch> branch = new ArrayList<Branch>();
 		
+		/**
+		 * to add branch details
+		 * 
+		 * @param b
+		 */
 		public void addBranch(Branch b)
 		{
 			boolean flag = false;
@@ -22,6 +27,10 @@ public class BranchBuilder {
 			}
 		}
 		
+		/**
+		 * to get List of branch details
+		 *  
+		 */
 		public void printBranch()
 		{
 			System.out.println("the data is");
@@ -31,6 +40,12 @@ public class BranchBuilder {
 			}
 		}
 		
+		/**
+		 * to update branch details by removing current branch details
+		 * 
+		 * @param current -- existing branch details
+		 * @param update -- new branch details
+		 */
 		public void updateBranch(Branch current, Branch update)
 		{
 			boolean flag = false;
@@ -49,6 +64,11 @@ public class BranchBuilder {
 			}
 		}
 		
+		/**
+		 * to remove branch details using id
+		 * 
+		 * @param b
+		 */
 		public void removeBranch(Branch b)
 		{
 			boolean flag = false;

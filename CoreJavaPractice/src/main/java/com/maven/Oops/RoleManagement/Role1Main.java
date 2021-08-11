@@ -22,7 +22,7 @@ public class Role1Main {
 		
 		System.out.println(builder.updateRole(r, r2));
 		
-		System.out.println(builder.getRole1(3));
+		System.out.println(builder.getRole1ById(3));
 		
 		System.out.println(builder.getRole1ByRoleName("tester"));
 		

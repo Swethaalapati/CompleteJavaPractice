@@ -5,6 +5,11 @@ public class TeacherBuilder {
 
 		ArrayList<Teacher> teacher = new ArrayList<Teacher>();
 		
+		/**
+		 * to add Teacher details
+		 * 
+		 * @param t
+		 */
 		public void addTeacher(Teacher t)
 		{
 			boolean flag = false;
@@ -22,6 +27,10 @@ public class TeacherBuilder {
 			}
 		}
 		
+		/**
+		 * to get List of Teacher details
+		 * 
+		 */
 		public void printTeacher()
 		{
 			System.out.println("the data is");
@@ -31,6 +40,12 @@ public class TeacherBuilder {
 			}
 		}
 		
+		/**
+		 * to update teacher details by removing current details
+		 * 
+		 * @param current -- existing details
+		 * @param update -- new details
+		 */
 		public void updateTeacher(Teacher current, Teacher update)
 		{
 			boolean flag = false;
@@ -49,6 +64,11 @@ public class TeacherBuilder {
 			}
 		}
 		
+		/**
+		 * to remove teacher details
+		 * 
+		 * @param b
+		 */
 		public void removeTeacher(Teacher b)
 		{
 			boolean flag = false;

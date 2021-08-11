@@ -6,7 +6,13 @@ public class Branch1Builder {
 	
 	ArrayList<Branch1> branch = new ArrayList();
 	
-	public boolean addBranch(Branch1 b)				/* adding branch using return type boolean */
+	/**
+	 * to add branch if id's are equal
+	 * 
+	 * @param b
+	 * @return true or false based on Parameter
+	 */
+	public boolean addBranch(Branch1 b)
 	{
 		boolean flag = false;
 		for(Branch1 brch : branch)
@@ -24,14 +30,23 @@ public class Branch1Builder {
 		return flag;
 	}
 	
-	
-	public ArrayList<Branch1> getAllBranches()		/* to show all branches so list is used */
+	/**
+	 * to get List of branches
+	 * 
+	 * @return List of branches
+	 */
+	public ArrayList<Branch1> getAllBranches()
 	{
 		return branch;
 	}
 	
-	
-	public boolean removeBranch(Branch1 b)			/* to remove a branch which is same and returning it with boolean type */
+	/**
+	 * to remove a branch which is same
+	 * 
+	 * @param b
+	 * @return true or false based on parameter
+	 */
+	public boolean removeBranch(Branch1 b)
 	{
 		boolean flag = false;
 		for(Branch1 brch : branch)
@@ -49,8 +64,14 @@ public class Branch1Builder {
 		return flag;
 	}
 	
-	
-	public boolean updateBranch(Branch1 current, Branch1 update)	/* updating branch by removing current branch */
+	/**
+	 * to update a branch by removing the current branch
+	 * 
+	 * @param current --- existing branch
+	 * @param update --- new branch
+	 * @return true or false based on parameters
+	 */
+	public boolean updateBranch(Branch1 current, Branch1 update)
 	{
 		boolean flag = false;
 		for(Branch1 brch : branch)
@@ -64,13 +85,18 @@ public class Branch1Builder {
 		if(flag)
 		{
 			branch.remove(current);
-			addBranch(update);
+			branch.add(update);
 		}
 		return flag;
 	}
 	
-	
-	public Branch1 getBranch1(int id)		/* getting branch with id */
+	/**
+	 * to get branch with id
+	 * 
+	 * @param id
+	 * @return branch based on parameter
+	 */
+	public Branch1 getBranch1(int id)
 	{
 		Branch1 b = null;
 		for(Branch1 brch : branch)
@@ -83,8 +109,13 @@ public class Branch1Builder {
 		return b;
 	}
 	
-	
-	public ArrayList<Branch1> getBranch1ByBranchName(String branchName)		/* getting branch by branchname */
+	/**
+	 * to get List of Branches using branch name
+	 * 
+	 * @param branchName
+	 * @return branch name
+	 */
+	public ArrayList<Branch1> getBranch1ByBranchName(String branchName)		
 	{
 		ArrayList<Branch1> branchNameBranch1 = new ArrayList();
 		for(Branch1 brch : branch)
@@ -97,8 +128,13 @@ public class Branch1Builder {
 		return branchNameBranch1;
 	}
 	
-	
-	public ArrayList<Branch1> getBranch1ByBranchHead(String branchHead)		/* getting branch by branchhead */
+	/**
+	 * to get list of branch by branch head
+	 * 
+	 * @param branchHead
+	 * @return branch details by Branch Head
+	 */
+	public ArrayList<Branch1> getBranch1ByBranchHead(String branchHead)		
 	{
 		ArrayList<Branch1> branchHeadBranch1 = new ArrayList();
 		for(Branch1 brch : branch)
@@ -111,7 +147,12 @@ public class Branch1Builder {
 		return branchHeadBranch1;
 	}
 	
-	
+	/**
+	 * to get List of Subjects in a branch by Subject id
+	 * 
+	 * @param id
+	 * @return List of subjects
+	 */
 	public ArrayList<String> getSubjectsById(int id)		/* getting subjects by id */
 	{
 		for(Branch1 brch : branch)

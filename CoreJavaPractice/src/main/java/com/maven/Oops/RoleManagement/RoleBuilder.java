@@ -5,6 +5,11 @@ public class RoleBuilder {
 
 	ArrayList<Role> role = new ArrayList<Role>();
 	
+	/**
+	 * to add role details
+	 * 
+	 * @param r
+	 */
 	public void addRole(Role r)
 	{
 		boolean flag = false;
@@ -22,6 +27,10 @@ public class RoleBuilder {
 		}
 	}
 	
+	/**
+	 * to get List of Role details
+	 * 
+	 */
 	public void printRole()
 	{
 		System.out.println("the data is");
@@ -31,6 +40,12 @@ public class RoleBuilder {
 		}
 	}
 	
+	/**
+	 * to update role details by removing current details
+	 * 
+	 * @param current -- existing details
+	 * @param update -- new details
+	 */
 	public void updateRole(Role current, Role update)
 	{
 		boolean flag = false;
@@ -49,6 +64,11 @@ public class RoleBuilder {
 		}
 	}
 	
+	/**
+	 * to remove role details
+	 * 
+	 * @param r
+	 */
 	public void removeRole(Role r)
 	{
 		boolean flag = false;

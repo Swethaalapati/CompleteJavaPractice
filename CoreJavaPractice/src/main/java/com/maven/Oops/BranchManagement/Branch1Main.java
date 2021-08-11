@@ -51,8 +51,10 @@ public class Branch1Main {
 		System.out.println(builder.getAllBranches());
 		
 		System.out.println(builder.removeBranch(b1));
+		System.out.println(builder.getAllBranches());
 		
 		System.out.println(builder.updateBranch(b, b2));
+		System.out.println(builder.getAllBranches());
 		
 		System.out.println(builder.getBranch1(3));
 		
