@@ -24,10 +24,10 @@ public class Role {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getrole() {
+	public String getRole() {
 		return role;
 	}
-	public void setrole(String role) {
+	public void setRole(String role) {
 		this.role = role;
 	}
 	@Override
@@ -56,7 +56,7 @@ public class Role {
 			return false;
 		return true;
 	}
-	@Override
+	
 	public String toString() {
 		return "Role [id=" + id + ", role=" + role + "]";
 	}
