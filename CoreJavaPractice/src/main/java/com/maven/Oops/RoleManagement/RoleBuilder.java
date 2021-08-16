@@ -33,11 +33,9 @@ public class RoleBuilder {
 	 */
 	public void printRole()
 	{
-		System.out.println("the data is");
-		for(Role role : role)
-		{
+		
 			System.out.println(role);
-		}
+		
 	}
 	
 	/**
@@ -85,4 +83,6 @@ public class RoleBuilder {
 			role.remove(r);
 		}
 	}
+
+	
 }

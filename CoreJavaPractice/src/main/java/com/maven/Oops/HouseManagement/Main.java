@@ -40,9 +40,9 @@ public class Main {
 		
 		System.out.println(builder.getHouseById(3));
 		
-		System.out.println(builder.getHouseNames("ajay"));
+		System.out.println(builder.getHouseByNames("ajay"));
 		
-		System.out.println(builder.getRoomsByRoomId(5));
+		
 		
 	}
 }

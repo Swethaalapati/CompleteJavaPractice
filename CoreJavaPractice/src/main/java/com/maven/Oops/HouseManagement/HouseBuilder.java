@@ -116,7 +116,7 @@ public class HouseBuilder {
 	 * @param houseName
 	 * @return hse if names are same i.e., to add details
 	 */
-	public ArrayList<House> getHouseNames(String houseName)
+	public ArrayList<House> getHouseByNames(String houseName)
 	{
 		ArrayList<House> houseNames = new ArrayList();
 		for(House hse : house)
@@ -129,22 +129,5 @@ public class HouseBuilder {
 		return houseNames;
 	}
 	
-	/**
-	 * to get rooms by room id
-	 * 
-	 * @param rid - room id
-	 * @return null if there is no room with the id else return the room details
-	 */
-	public Room getRoomsByRoomId(int rid)
-	{
-		/* Room r = null; */
-		for(Room rm : room)
-		{
-			if(rm.getRid() == rid)
-			{
-				return rm;
-			}
-		}
-		return null;
-	}
+	
 }

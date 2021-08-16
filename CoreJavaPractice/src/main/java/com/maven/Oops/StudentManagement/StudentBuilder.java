@@ -1,6 +1,8 @@
 package com.maven.Oops.StudentManagement;
 import java.util.ArrayList;
 
+import com.maven.Oops.EmployeeManagement.Employee;
+
 public class StudentBuilder {
 	
 	
@@ -72,12 +74,18 @@ public class StudentBuilder {
 	 */
 	public void removeStudent(Student s)
 	{
+		boolean flag = false;
 		for(Student std : student)
 		{
 			if(std.equals(s))
 			{
-				student.remove(std);
+				flag = true;
+				break;
 			}
+		}
+		if(flag)
+		{
+			student.remove(s);
 		}
 	}
 }
