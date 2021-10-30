@@ -1,19 +1,24 @@
 package com.maven.BasicPrograms;
 import java.util.Scanner;
+
+
 public class Pattern2{
 
      public static void main(String []args){
-        Scanner s = new Scanner(System.in);
-        int n,i,j;
-        System.out.println("enter n value");
-        n = s.nextInt();
+    	 
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter n value");
+        
+        int n = input.nextInt();
        
-        for(i=0;i<n;i++)
+        for(int i = 0; i < n; i++)
         {
-            for(j=0;j<=i;j++)
+            for(int j = 0; j <= i; j++)
             {
+            	//printing star with spaces
                 System.out.print(" * ");
             }
+            //printing new line
             System.out.println();
         }
      }
