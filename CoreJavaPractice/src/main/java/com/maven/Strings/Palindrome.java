@@ -16,7 +16,7 @@ public class Palindrome {
 		}
 		if(str.equals(rev))
 		{
-			System.out.println("Palindrome");
+			System.out.println("Palindrome " + rev);
 		}
 		else
 		{

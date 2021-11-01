@@ -1,19 +1,23 @@
 package com.maven.BasicPrograms;
 import java.util.Scanner;
+
 public class Pattern1{
 
      public static void main(String []args){
-        Scanner s = new Scanner(System.in);
-        int n,i,j;
-        System.out.println("enter n value");
-        n = s.nextInt();
+    	 
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter n value");
+        
+        int n = input.nextInt();
        
-        for(i=0;i<n;i++)
+        for(int i = 0; i < n; i++)
         {
-            for(j=0;j<n;j++)
+            for(int j = 0; j < n; j++)
             {
+            	//Print * along with spaces on both sides
                 System.out.print(" * ");
             }
+            //Printing new line
             System.out.println();
         }
      }

@@ -5,6 +5,7 @@ public class Room {
 	
 	private int rid;
 	private String roomName;
+	private House house;
 	
 	
 	public Room() {
@@ -62,11 +63,12 @@ public class Room {
 			return false;
 		return true;
 	}
-	
-	
+
+
 	@Override
 	public String toString() {
-		return "Room [rid=" + rid + ", roomName=" + roomName + "]";
+		return "Room [rid=" + rid + ", roomName=" + roomName + ", house=" + house + "]";
 	}
+	
 	
 }
