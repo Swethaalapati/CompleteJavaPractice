@@ -13,7 +13,7 @@ public class Pattern2{
         {
             for(int j = 0; j <= i; j++)
             {
-            	//print * along with spaces
+            	//Print * along with spaces on both sides
                 System.out.print(" * ");
             }
             //printing new line
